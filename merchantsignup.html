@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>
+            User Sign Up
+        </title>
+    </head>
+    <body>
+        <header><h1>VBQueue</h1></header>
+        <div><h1>Sign Up</h1></div>
+        <form action="merchanthomepage.html" method="POST">
+            <div><h1>Merchant Details</h1></div>
+            <input type="text" name="uname" placeholder="Username" autofocus required><br>
+            <input type="text" name="fname" placeholder="Firstname" required><br>
+            <input type="text" name="lname" placeholder="Lastname" required><br>
+            <input type="tel" name="mobile" placeholder="Mobile Number" pattern="^(?:(?:\+|0{0,2})91(\s*[\-]\s*)?|[0]?)?[789]\d{9}$" required><br>
+            <input type="email" name="email" placeholder="Email" required><br>
+            <div><h1>Shop Details</h1></div>
+            <input type="text" name="shopname" placeholder="Shop name"required><br>
+            <datalist id="shoplist">
+                <option value="Saloon">Saloon</option>
+                <option value="Grocery">Grocery</option>
+                <option value="clinic">Clinic</option>
+            </datalist><br>
+            <input type="text" list="shoplist" id="category" name="Category" placeholder="Shop Category" required><br>
+            <input type="text" name="addr" placeholder="Address" required><br>
+            <input type="text" name="city" placeholder="City" required><br>
+            <input type="text" name="state" placeholder="state" required><br>
+            Opening time<input type="time" name="otime" placeholder="Opening time" required><br>
+            Closing time<input type="time" name="ctime" placeholder="Closing time" required><br>
+            <input type="number" name="dmoney" placeholder="Amount to pay by user" required><br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html> 

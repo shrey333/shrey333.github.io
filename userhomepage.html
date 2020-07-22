@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>
+            Home Page
+        </title>
+    </head>
+    <body>
+        <header>
+            <h1>VBQueue</h1>
+            <nav>
+                <a href="#queue">Queue</a>
+                <a href="#categories">Categories</a> | 
+                <a href="#searchshop">Shops</a> | 
+                <a href="#aboutus">About Us</a> |
+                <a href="useredit.html">Edit</a> |
+                <a href="help">Help</a>
+            </nav>
+        </header>
+        <section>
+            <h1>
+                Welcome to VBQueue
+            </h1>
+        </section>
+        <section id="queue">
+            <h1>Queue Status</h1>
+            display of various queue in user joined 
+        </section>
+        <section id="searchshop">
+            <form action="showlist.html" method="POST">
+                <h1><label for="Search">Search Shop</label></h1>
+                <input type="search" id="Search" placeholder="Search Shop" name="search">
+                <input type="submit" value="Go">
+            </form>
+            <div><h1>Shop near me</h1></div>
+            <form action="shop1.html" method="POST">
+                <div>Arya Saloon time: 8.00 AM to 10.00 PM</div>
+                <input type="submit" value="Join Queue">
+            </form>
+        </section>
+        <section id="Categories">
+            <form action="showcategory.html" method="POST">
+                <label for="category"><h1>Category</h1>
+                </label>
+                <datalist id="shoplist">
+                    <option value="Saloon">Saloon</option>
+                    <option value="Grocery">Grocery</option>
+                    <option value="clinic">Clinic</option>
+                </datalist>
+                <input type="text" list="shoplist" id="category" name="category">
+                <input type="submit" value="Search">
+            </form>
+        </section>
+        <section>
+            <h1>About Us</h1>
+        </section>
+        <footer>
+            <h1>VBQueue</h1>
+            developed by:
+        </footer>
+    </body>
+</html>
