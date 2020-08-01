@@ -3,24 +3,74 @@
         <title>
             User Sign Up
         </title>
+        <link href="style.css"  rel="stylesheet"  type="text/css">
     </head>
     <body>
-        <header><h1>VBQueue</h1>
-            <nav>
-                <a href="index.html">Back to Login</a>
-            </nav>
+        <header class="container">
+            <div class="logo"><a href="index.html">Queue</a></div>
+            <div class="nav">
+                <a href="index.html">Home</a>
+                <a href="#queue">Queue</a> 
+                <a href="#categories">Categories</a> 
+                <a href="#searchshop">Shops</a> 
+            </div>
         </header>
-        <div><h1>Sign Up</h1></div>
-        <form action="userhomepage.html" method="GET">
-            <input type="text" name="uname" placeholder="Username" autofocus required><br>
-            <input type="text" name="fname" placeholder="Firstname" required><br>
-            <input type="text" name="lname" placeholder="Lastname" required><br>
-            <input type="tel" name="mobile" placeholder="Mobile Number" pattern="^(?:(?:\+|0{0,2})91(\s*[\-]\s*)?|[0]?)?[789]\d{9}$" required><br>
-            <input type="email" name="email" placeholder="Email" required><br>
-            <input type="text" name="addr" placeholder="Address" required><br>
-            <input type="text" name="city" placeholder="City" required><br>
-            <input type="text" name="state" placeholder="state" required><br>
-            <input type="submit" value="Submit">
-        </form>
+        <section class="form">
+            <div class="caption main">User Sign Up</div>
+            <form method="GET">
+                
+                <div class="input-label">Username</div>
+                <input type="text" name="uname" placeholder="Enter username" autofocus required>
+                <div class="input-label">First Name</div>
+                <input type="text" name="fname" placeholder="Enter your firstname" required>
+                <div class="input-label">Last Name</div>
+                <input type="text" name="lname" placeholder="Enter your lastname" required>
+                <div class="input-label">Password</div>
+                <input type="password" name="passwd" placeholder="Enter your password" required>
+                <div class="input-label">Mobile Number</div>
+                <input type="tel" name="mobile" placeholder="Enter your mobile number" pattern="^(?:(?:\+|0{0,2})91(\s*[\-]\s*)?|[0]?)?[789]\d{9}$" required>
+                <div class="input-label">Email ID</div>
+                <input type="email" name="email" placeholder="Enter your email ID" required>
+                <div class="input-label">Address</div>
+                <input type="text" name="addr" placeholder="Enter your address" required>
+                <div class="input-label">City</div>
+                <input type="text" name="city" placeholder="Enter your city" required>
+                <div class="input-label">State</div>
+                <input type="text" name="state" placeholder="Enter your state" required>
+                <div><input type="submit" formnovalidate="formnovalidate" formaction="Login.html" value="Back to Login">
+                    <input type="submit" formaction="userhomepage.html" value="Register">
+                </div>
+            </form>
+        </section>
+        <footer>
+            <div>
+                <div class="follow">
+                    follow us on:
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z"/>
+                        <path d="M9 19c-4.286 1.35-4.286-2.55-6-3m12 5v-3.5c0-1 .099-1.405-.5-2 2.791-.3 5.5-1.366 5.5-6.04a4.567 4.567 0 0 0 -1.333 -3.21 4.192 4.192 0 00-.08-3.227s-1.05-.3-3.476 1.267a12.334 12.334 0 0 0 -6.222 0C6.462 2.723 5.413 3.023 5.413 3.023a4.192 4.192 0 0 0 -.08 3.227A4.566 4.566 0 004 9.486c0 4.64 2.709 5.68 5.5 6.014-.591.589-.56 1.183-.5 2V21" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z"/>
+                        <path d="M22 4.01c-1 .49-1.98.689-3 .99-1.121-1.265-2.783-1.335-4.38-.737S11.977 6.323 12 8v1c-3.245.083-6.135-1.395-8-4 0 0-4.182 7.433 4 11-1.872 1.247-3.739 2.088-6 2 3.308 1.803 6.913 2.423 10.034 1.517 3.58-1.04 6.522-3.723 7.651-7.742a13.84 13.84 0 0 0 .497 -3.753C20.18 7.773 21.692 5.25 22 4.009z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z"/>
+                        <rect x="4" y="4" width="16" height="16" rx="4" />
+                        <circle cx="12" cy="12" r="3" />
+                        <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                    </svg>
+                </div>
+            </div>
+            <div class="logo">Queue<br>
+                <div class="lower-caption">developed by: Youth</div>
+            </div>
+            <div class="nav">
+                <a href="#queue">Queue</a> <br>
+                <a href="#categories">Categories</a><br> 
+                <a href="#searchshop">Shops</a> <br>
+                <a href="#help">Help</a>
+            </div>
+        </footer>
     </body>
 </html> 

@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /* 'Bebas Neue', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');/* 'Alfa Slab One', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Taviraj:wght@500&display=swap');/* font-family: 'Taviraj', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap'); /* font-family: 'Prata', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@900&display=swap'); /* font-family: 'Source Serif Pro', serif; */
+@font-face {
+    font-family: Colortube;
+    src: url('Font/ColorTube-Regular.ttf') format('truetype');
+}
+@font-face{
+    font-family: ZonaPro;
+    src: url('Font/ZonaPro-ExtraBoldDemo.otf') format('opentype');
+}
+@font-face{
+    font-family: Codepro;
+    src: url('Font/CodeDemo-Bold.otf') format('opentype');
+}
+@font-face{
+    font-family: tide;
+    src: url('Font/HighTide-Bold.ttf') format('truetype');
+}
+body{
+    text-decoration: none;
+    text-align: center;
+}
+.button{
+    display: inline;
+    border: 2px solid blue;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+.button:hover{
+    background-color: blue;
+    color: white;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    border-bottom: 1px solid white;
+    padding-bottom: 15px;
+}
+.logo{
+    padding: 0px;
+    margin: 0px 40px;
+    font-size: 35px;
+    font-family: tide;
+}
+.logo a{
+    text-decoration: none;
+    color: white;
+}
+.container .nav{
+    margin: 0px 40px;
+}
+.nav a{
+    font-size: 25px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+}
+.nav a:hover{
+    color: blue;
+}
+
+.segment{
+    display: flex;
+    align-items: center;
+}
+.caption{
+    align-items: center;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 50px;
+    text-align: left;
+    padding: 20px;
+    color: wheat;
+    float: left;
+}
+.lower-caption{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: whitesmoke;
+    opacity: 70%;
+}
+.segment .caption img{
+    height: 18px;
+    width: 18px;
+    color: white;
+}
+.segment img{
+    padding: 0px;
+    width: 800px;
+    height: 600px;
+}
+.segment img .lol{
+    width: 100px;
+    height: 100px;
+}
+.onlytext .caption{
+    float: none;
+}
+.onlytext{
+    margin: 100px;
+    padding: 100px;
+}
+footer{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    border-top: 1px solid white;
+    margin: 50px;
+    padding: 50px;
+    text-align: center;
+}
+footer .follow{
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.input{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.input-label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin: 5px;
+}
+
+input{
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 15px;
+    width: 52%;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: none;
+    margin: 10px;
+}
+input:hover{
+    border-color: blue;
+}
+input[type="submit"]{
+    font-size: 25px;
+    margin: 10px;
+    width: 25%;
+    font-family: 'Bebas Neue', cursive;
+    border-color: blue;
+}
+input[type="submit"]:hover{
+    background-color: blue;
+}
+.main{
+    text-align: center;
+    float: none;
+}
+.lower{
+    color: blue;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 20px;
+}
