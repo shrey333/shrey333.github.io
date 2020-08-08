@@ -147,7 +147,7 @@ input:hover{
     border-color: blue;
     color: wheat;
 }
-input[type="submit"]{
+input[type="submit"], input[type="button"]{
     font-size: 25px;
     margin: 10px;
     width: 25%;
@@ -156,7 +156,7 @@ input[type="submit"]{
     background-color: #191c1d;
     border-color: blue;
 }
-input[type="submit"]:hover{
+input[type="submit"]:hover, input[type="button"]:hover{
     background-color: blue;
     color: wheat;
 }

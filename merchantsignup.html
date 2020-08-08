@@ -16,45 +16,47 @@
             </div>
         </header>
         <section class="form">
-            <div class="caption main">Merchant Edit</div>
+            <div class="caption main">Merchant Details</div>
             <form action="merchanthomepage.html" method="GET">
-                <div class="caption main">Merchant Details</div>
                 <div class="input-label">Username</div>
-                <input type="text" name="uname" placeholder="Enter username" autofocus required>
+                <input type="text" name="User-Name" placeholder="Enter username" autofocus required>
                 <div class="input-label">First Name</div>
-                <input type="text" name="fname" placeholder="Enter your firstname" required>
+                <input type="text" name="First-Name" placeholder="Enter your firstname" required>
                 <div class="input-label">Last Name</div>
-                <input type="text" name="lname" placeholder="Enter your lastname" required>
+                <input type="text" name="Last-Name" placeholder="Enter your lastname" required>
                 <div class="input-label">Password</div>
-                <input type="password" name="passwd" placeholder="Enter your password" required>
+                <input type="password" name="Password" placeholder="Enter your password" minlength="8" maxlength="16" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" required>
                 <div class="input-label">Mobile Number</div>
-                <input type="tel" name="mobile" placeholder="Enter your mobile number" pattern="^(?:(?:\+|0{0,2})91(\s*[\-]\s*)?|[0]?)?[789]\d{9}$" required>
+                <input type="tel" name="Mobile-Number" placeholder="Enter your mobile number" pattern="^(?:(?:\+|0{0,2})91(\s*[\-]\s*)?|[0]?)?[789]\d{9}$" required>
                 <div class="input-label">Email ID</div>
-                <input type="email" name="email" placeholder="Enter your email ID" required>
+                <input type="email" name="Email-ID" placeholder="Enter your email ID" required>
                 <div class="caption main">Shop Details</div>
                 <div class="input-label">Shop Name</div>
-                <input type="text" name="shopname" placeholder="Enter shop name"required>
+                <input type="text" name="Shop-Name" placeholder="Enter shop name"required>
                 <datalist id="shoplist">
                     <option value="Saloon">Saloon</option>
                     <option value="Grocery">Grocery</option>
                     <option value="clinic">Clinic</option>
                 </datalist><br>
                 <div class="input-label">Shop Category</div>
-                <input type="text" list="shoplist" id="category" name="Category" placeholder="Enter shop category" required>
+                <input type="text" list="shoplist" id="category" name="Shop-Category" placeholder="Enter shop category" required>
                 <div class="input-label">Address</div>
-                <input type="text" name="addr" placeholder="Enter address of shop" required>
+                <input type="text" name="Address" placeholder="Enter address of shop" required>
                 <div class="input-label">City</div>
-                <input type="text" name="city" placeholder="Enter city of shop" required>
+                <input type="text" name="City" placeholder="Enter city of shop" required>
                 <div class="input-label">State</div>
-                <input type="text" name="state" placeholder="Enter state of shop" required>
+                <input type="text" name="State" placeholder="Enter state of shop" required>
                 <div class="input-label">Opening time of shop(hh:mm PM/AM)</div>
-                <input type="time" name="otime" placeholder="Opening time" required>
+                <input type="time" name="Opening-Time" placeholder="Opening time" required>
                 <div class="input-label">Closing time of shop(hh:mm PM/AM)</div>
-                <input type="time" name="ctime" placeholder="Closing time" required>
+                <input type="time" name="Closing-Time" placeholder="Closing time" required>
                 <div class="input-label">Amount to be paid by user(in Rupees)</div>
-                <input type="number" name="dmoney" placeholder="Amount to be paid by user" required>
+                <input type="number" name="Default-Money" placeholder="Amount to be paid by user" required>
                 <div><input type="submit" formaction="Login.html" formnovalidate="formnovalidate" value="Back to Login">
                     <input type="submit" formaction="merchanthomepage.html" value="Register">
+                </div>
+                <div>
+                    <input type="button" onclick="showDetails()" value="Check details before submitting">
                 </div>
             </form>
         </section>
@@ -88,5 +90,6 @@
                 <a href="#help">Help</a>
             </div>
         </footer>
+        <script src="/js/merchantsignup.js"></script>
     </body>
 </html> 

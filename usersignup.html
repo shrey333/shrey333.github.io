@@ -17,28 +17,30 @@
         </header>
         <section class="form">
             <div class="caption main">User Sign Up</div>
-            <form method="GET">
-                
+            <form id="frm" method="GET">
                 <div class="input-label">Username</div>
-                <input type="text" name="uname" placeholder="Enter username" autofocus required>
+                <input type="text" name="User-Name" placeholder="Enter username" autofocus required>
                 <div class="input-label">First Name</div>
-                <input type="text" name="fname" placeholder="Enter your firstname" required>
+                <input type="text" name="First-Name" placeholder="Enter your firstname" required>
                 <div class="input-label">Last Name</div>
-                <input type="text" name="lname" placeholder="Enter your lastname" required>
+                <input type="text" name="Last-Name" placeholder="Enter your lastname" required>
                 <div class="input-label">Password</div>
-                <input type="password" name="passwd" placeholder="Enter your password" required>
+                <input id="passwd" type="Password" name="passwd" placeholder="Enter your password" minlength="8" maxlength="16" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" required>
                 <div class="input-label">Mobile Number</div>
-                <input type="tel" name="mobile" placeholder="Enter your mobile number" pattern="^(?:(?:\+|0{0,2})91(\s*[\-]\s*)?|[0]?)?[789]\d{9}$" required>
+                <input type="tel" name="Mobile-Number" placeholder="Enter your mobile number" pattern="^(?:(?:\+|0{0,2})91(\s*[\-]\s*)?|[0]?)?[789]\d{9}$" required>
                 <div class="input-label">Email ID</div>
-                <input type="email" name="email" placeholder="Enter your email ID" required>
+                <input type="email" name="Email-ID" placeholder="Enter your email ID" required>
                 <div class="input-label">Address</div>
-                <input type="text" name="addr" placeholder="Enter your address" required>
+                <input type="text" name="Address" placeholder="Enter your address" required>
                 <div class="input-label">City</div>
-                <input type="text" name="city" placeholder="Enter your city" required>
+                <input type="text" name="City" placeholder="Enter your city" required>
                 <div class="input-label">State</div>
-                <input type="text" name="state" placeholder="Enter your state" required>
+                <input type="text" name="State" placeholder="Enter your state" required>
                 <div><input type="submit" formnovalidate="formnovalidate" formaction="Login.html" value="Back to Login">
                     <input type="submit" formaction="userhomepage.html" value="Register">
+                </div>
+                <div>
+                    <input type="button" onclick="showDetails()" value="Check details before submitting">
                 </div>
             </form>
         </section>
@@ -72,5 +74,6 @@
                 <a href="#help">Help</a>
             </div>
         </footer>
+        <script src="/js/usersignup.js"></script>
     </body>
 </html> 
