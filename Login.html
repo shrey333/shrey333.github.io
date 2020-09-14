@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css?h=a52d057774a957ffc5c4e3aabf79520a">
-    <link rel="stylesheet" href="assets/css/styles.min.css?h=a8bad3b1594fefaadcb93582fcf46021">
+    <link rel="stylesheet" href="assets/css/styles.min.css?h=0364d218c9e3918e504e3ae37d0e6a9b">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
     <link rel="stylesheet" href="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css">
@@ -40,7 +40,7 @@ The Queue Platform ®.
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item"></li>
                     <li class="nav-item"><a class="nav-link" href="index.html#" style="color: rgb(0,0,0);">HOME</a></li>
-                    <li class="nav-item"><a class="nav-link text-uppercase" href="Merchant.html" style="color: rgb(0,0,0);">merchant</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase" href="merchant.html" style="color: rgb(0,0,0);">merchant</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.html#idea" style="color: rgb(0,0,0);">IDEA</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.html#aboutus" style="color: rgb(0,0,0);">ABOUT US</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.html#contactus" style="color: rgb(0,0,0);">CONTACT US</a></li>
@@ -50,16 +50,37 @@ The Queue Platform ®.
         </div>
     </nav>
     <!-- End: Navigation Clean -->
+    <div></div>
     <!-- Start: Login Form Clean -->
     <div class="login-clean" style="background: url(assets/img/Taieri.svg?h=163fd19d9c8d684c5492ac111914bed4) center / cover no-repeat;background-color: rgb(247,247,247);color: rgb(0,0,0);">
-        <form data-aos="zoom-in" data-aos-duration="1300" data-aos-delay="200" method="post" action="homepage.html">
-            <h2 class="sr-only">Login Form</h2>
-            <div class="illustration"><i class="icon ion-ios-navigate" style="color: rgb(0,0,0);"></i></div>
-            <div class="form-group">
-                <p><strong>Email&nbsp;</strong><span class="text-danger">*</span></p><input class="form-control" type="email" name="" placeholder="user@domain.com" autofocus="" required=""></div>
-            <div class="form-group">
-                <p><strong>Password&nbsp;</strong><span class="text-danger">*</span></p><input class="form-control" type="password" name="" placeholder="Ex. U2$e1R3@" required=""></div>
-            <div class="form-group"><button class="btn btn-primary btn-block text-uppercase" type="submit" style="background-color: rgb(0,0,0);">Log In</button></div><a class="forgot" href="#">Forgot your email or password?</a><a class="forgot" href="register.html">Register here</a></form>
+        <div data-aos="zoom-in" data-aos-duration="1300" data-aos-delay="200" style="border-style: none;">
+            <ul class="nav nav-tabs text-uppercase text-center border rounded border-light shadow" role="tablist" style="max-width: 320px;margin: 0 auto;width: 100%;border-style: none;background: rgba(255,255,255,0.65);border-top: 1.3333px none #495057;">
+                <li class="nav-item" role="presentation" style="color: rgb(0,0,0);width: 50%;text-align: center;"><a class="nav-link active" role="tab" data-toggle="tab" href="#tab-1" style="border-style: none;color: rgb(0,0,0);">USER</a></li>
+                <li class="nav-item" role="presentation" style="width: 50%;text-align: center;"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-2" style="border-style: none;color: rgb(0,0,0);">MERCHANT</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" role="tabpanel" id="tab-1">
+                    <form class="shadow" method="post" action="homepage.html" style="border: 1.3333px none #495057;padding-top: 0px;width: 90%;height: auto;margin: 0px auto;">
+                        <h2 class="sr-only">Login Form</h2>
+                        <div class="illustration"><i class="fab fa-umbraco" style="color: rgb(0,0,0);"></i></div>
+                        <div class="form-group">
+                            <p><strong>Email</strong><span class="text-danger">*</span></p><input class="form-control" type="email" name="" placeholder="user@domain.com" autofocus="" required=""></div>
+                        <div class="form-group">
+                            <p><strong>Password&nbsp;</strong><span class="text-danger">*</span></p><input class="form-control" type="password" name="" placeholder="Ex. U2$e1R3@" required=""></div>
+                        <div class="form-group"><button class="btn btn-primary btn-block text-uppercase" type="submit" style="background-color: rgb(0,0,0);">Log In</button></div><a class="forgot" href="#">Forgot your email or password?</a><a class="forgot" href="register.html">Register here</a></form>
+                </div>
+                <div class="tab-pane" role="tabpanel" id="tab-2">
+                    <form class="shadow" method="post" action="homepage.html" style="border-radius: 1.3333px;border-style: none;border-color: #495057;padding-top: 0px;">
+                        <h2 class="sr-only">Login Form</h2>
+                        <div class="illustration"><i class="fab fa-monero" style="color: rgb(0,0,0);"></i></div>
+                        <div class="form-group">
+                            <p><strong>Merchant ID&nbsp;</strong><span class="text-danger">*</span></p><input class="form-control" type="email" name="" placeholder="merchant@queue.io" autofocus="" required=""></div>
+                        <div class="form-group">
+                            <p><strong>Password&nbsp;</strong><span class="text-danger">*</span></p><input class="form-control" type="password" name="" placeholder="Ex. U2$e1R3@" required=""></div>
+                        <div class="form-group"><button class="btn btn-primary btn-block text-uppercase" type="submit" style="background-color: rgb(0,0,0);">Log In</button></div><a class="forgot" href="#">Forgot your email or password?</a><a class="forgot" href="merchant.html">Register here</a></form>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- End: Login Form Clean -->
     <!-- Start: Footer Basic -->
