@@ -8,7 +8,7 @@ $('document').ready(function(){
         }
         if(sa === 0){
             ++sa;
-            $('<div class="text-center border" style="padding:10px;margin:10px;">Hair Saloon Est. time : 15 minutes</div>').appendTo('#que');
+            $('<div class="text-center border" style="border-radius:5px;padding:10px;margin:10px;">Hair Saloon Est. time : 15 minutes</div>').appendTo('#que');
         }
         else{
             $('<div class="war" style="color:red;"><p>You are already waiting in queue.</p></div>').appendTo('#que');
@@ -25,7 +25,7 @@ $('document').ready(function(){
         }
         if(gro === 0){
             ++gro;
-            $('<div class="text-center border" style="padding:10px;margin:10px;">Grocery Est. time : 10 minutes</div>').appendTo('#que');
+            $('<div class="text-center border" style="border-radius:5px;padding:10px;margin:10px;">Grocery Est. time : 10 minutes</div>').appendTo('#que');
         }
         else{
             $('<div class="war" style="color:red;"><p>You are already waiting in queue.</p></div>').appendTo('#que');
@@ -42,7 +42,7 @@ $('document').ready(function(){
         }
         if(hos === 0){
             ++hos;
-            $('<div class="text-center border" style="padding:10px;margin:10px;">Hospital Est. time : 60 minutes</div>').appendTo('#que');
+            $('<div class="text-center border" style="border-radius:5px;padding:10px;margin:10px;">Hospital Est. time : 60 minutes</div>').appendTo('#que');
         }
         else{
             $('<div class="war" style="color:red;"><p>You are already waiting in queue.</p></div>').appendTo('#que');
