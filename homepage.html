@@ -53,14 +53,14 @@ The Queue Platform ®.
     <!-- End: Navigation Clean -->
     <!-- Start: Contact Form Clean -->
     <div id="main" class="contact-clean" style="background-color: rgb(255,255,255);height: 734.333px;">
-        <div class="container" data-aos="fade" data-aos-duration="800" data-aos-delay="50">
+        <div class="container" data-aos="fade" data-aos-duration="800" data-aos-delay="50" id="here">
             <div class="d-flex flex-column justify-content-center">
-                <div class="text-center all"><img class="pic" src="assets/img/wfh_5.svg?h=ea7a19ff2892f8fa235f07e299b3df7e" style="font-size: 17px;"></div>
-                <div>
+                <div class="text-center border rounded shadow all" id="que" style="min-height: 300px;max-width: 350px;margin: 0px auto;padding: 40px;">
                     <h1 class="text-capitalize text-center">Sorry, You are't standing in any queue</h1>
-                    <p class="text-center">You have to select any store from your favourite category or recent shop's queue in which you were standing to display queue. You have to pay minimum amount decided by our representative and owner of shop to secure your position.&nbsp;</p>
                 </div>
-                <div class="text-center"></div>
+                <div>
+                    <p class="text-center" style="margin: 20px 0px;">You have to select any store from your favourite category or recent shop's queue in which you were standing to display queue. You have to pay minimum amount decided by our representative and owner of shop to secure your position.&nbsp;</p>
+                </div>
             </div>
         </div>
     </div>
@@ -75,21 +75,24 @@ The Queue Platform ®.
                     <div class="card-group">
                         <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/716z0eWdZjL._SL1500_.jpg?h=ab3efb98bbadc8a4d1c89527984e6fdf" width="100px" height="300px">
                             <div class="card-body">
-                                <h4 class="card-title">Hair Saloon</h4>
+                                <h4 class="card-title" id="hospital">Hair Saloon</h4>
                                 <p class="card-text">We will offer a wide range of services&nbsp;that include: hair cuts, relaxers, perms, colors, shampoo, conditioning, curling,&nbsp; reconstructing, weaving, waving. Nails: manicures, pedicures, polish, <br>sculptured nails.
-                                    Skin Care: European facials, body waxing, massage.&nbsp;</p><button class="btn btn-primary text-uppercase border rounded" type="button" style="background-color: rgb(0,0,0);border-style: none;padding: 16px 32px;">Join Queue</button></div>
+                                    Skin Care: European facials, body waxing, massage.&nbsp;</p><a class="btn btn-primary text-uppercase border rounded" role="button" id="hair-saloon-btn" style="background-color: rgb(0,0,0);border-style: none;padding: 16px 32px;"
+                                    href="#here">Join Queue</a></div>
                         </div>
                         <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/image.jpg?h=d2582fb0716edfe12c133e94aa76f0dd" height="300px">
                             <div class="card-body">
-                                <h4 class="card-title">Grocery</h4>
+                                <h4 class="card-title" id="grocery">Grocery</h4>
                                 <p class="card-text">A grocery store is a retail store that sells food Large grocery stores&nbsp;that stock products other than food, such as clothing or household items are called supermarkets. Some large supermarkets also include a&nbsp;
-                                    pharmacy and an electronics section, the latter selling DVDs,&nbsp; headphones, digital alarm clocks, and similar items.&nbsp;<br></p><button class="btn btn-primary text-uppercase border rounded" type="button" style="background-color: rgb(0,0,0);padding: 16px 32px;">Join Queue</button></div>
+                                    pharmacy and an electronics section, the latter selling DVDs,&nbsp; headphones, digital alarm clocks, and similar items.&nbsp;<br></p><a class="btn btn-primary text-uppercase border rounded" role="button" id="grocery-btn"
+                                    style="background-color: rgb(0,0,0);padding: 16px 32px;" href="#here">Join Queue</a></div>
                         </div>
                         <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/best-hospital-in-south-india.jpg?h=6b04f2863c9b0107f618e1484cd18ba3" height="300px">
                             <div class="card-body">
-                                <h4 class="card-title">Hospital</h4>
+                                <h4 class="card-title" id="hospital">Hospital</h4>
                                 <p class="card-text">A hospital is a health care&nbsp;institution providing patient&nbsp;treatment with specialized medical and nursing staff and medical equipment.&nbsp;The best-known type of hospital is the general hospital, which typically
-                                    has an emergency department to treat urgent health problems ranging from fire and accident victims&nbsp; to a sudden illness.<br></p><button class="btn btn-primary text-uppercase border rounded" type="button" style="background-color: rgb(0,0,0);padding: 16px 32px;">Join Queue</button></div>
+                                    has an emergency department to treat urgent health problems ranging from fire and accident victims&nbsp; to a sudden illness.<br></p><a class="btn btn-primary text-uppercase border rounded" role="button" id="hospital-btn"
+                                    style="background-color: rgb(0,0,0);padding: 16px 32px;" href="#here">Join Queue</a></div>
                         </div>
                     </div>
                 </div>
@@ -168,6 +171,7 @@ The Queue Platform ®.
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
     <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js"></script>
     <script src="assets/js/script.min.js?h=bbc356a486896b2298285b452920692a"></script>
+    <script src="assets/js/page.js"></script>
 </body>
 
 </html>
